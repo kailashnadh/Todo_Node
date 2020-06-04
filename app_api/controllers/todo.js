@@ -25,7 +25,7 @@ const createTodo = function (req, res){
         username: req.body.username,
         description: req.body.description,
         targetDate: req.body.targetDate,
-        isDone: req.body.isDone
+        isDone: 'false'
     }, (err, tododata) => {
         if (err) {
 			res
