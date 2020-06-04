@@ -56,5 +56,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-app.listen(5000);
+
+const port=process.env.port || 5000;
+app.listen(port);
 module.exports = app;
